@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f9e5d8, #fbded5, #f8e1f0);
+    background-size: 400% 400%;
+    animation: gradient-bg 15s ease infinite;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+@keyframes gradient-bg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#app {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #d1a75a;
+}
+
+label, p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #d1a75a;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #b99050;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    font-size: 16px;
+}
