@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cilt Bakım Rehberi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Yaş doğrulama -->
+        <section id="age-verification" class="active">
+            <h1>Cilt Bakım Rehberi</h1>
+            <p>Lütfen yaşınızı doğrulayın:</p>
+            <label for="age">Yaşınızı Giriniz:</label>
+            <input type="number" id="age" min="18" placeholder="Örn: 25">
+            <button id="verify-age">Devam Et</button>
+            <p id="age-error" class="error"></p>
+        </section>
+
+       <section id="skin-type-questions">
+    <h2>Cilt Tipinizi Tanıyalım</h2>
+    <form id="skin-type-form">
+        <label>Cildiniz genelde nasıl hissedilir?</label>
+        <select id="skin-feel">
+            <option value="dry">Kuru</option>
+            <option value="oily">Yağlı</option>
+            <option value="combination">Karma</option>
+            <option value="sensitive">Hassas</option>
+        </select>
+
+        <label>Cildinizde sık karşılaştığınız durumlar nelerdir? (Birden fazla seçebilirsiniz)</label>
+        <input type="checkbox" id="acne" name="issues" value="Akne"> Akne
+        <input type="checkbox" id="wrinkles" name="issues" value="Kırışıklıklar"> Kırışıklıklar
+        <input type="checkbox" id="dark-spots" name="issues" value="Lekeler"> Lekeler
+        <input type="checkbox" id="redness" name="issues" value="Kızarıklık"> Kızarıklık
+        <input type="checkbox" id="dry-patches" name="issues" value="Kuru bölgeler"> Kuru bölgeler
+        <input type="checkbox" id="large-pores" name="issues" value="Geniş gözenekler"> Geniş gözenekler
+
+        <label>Günlük cilt bakımına ayırabileceğiniz süre:</label>
+        <select id="routine-time">
+            <option value="short">10 dakika</option>
+            <option value="medium">20 dakika</option>
+            <option value="long">30 dakika veya daha fazla</option>
+        </select>
+
+        <button type="submit">Rutini Görüntüle</button>
+    </form>
+</section>
+
+<section id="routine-result">
+    <h2>Cilt Bakım Rutininiz</h2>
+    <p id="routine-details"></p>
+    <h3>Önerilen Ürün Adımları</h3>
+    <ul id="routine-steps"></ul>
+</section> 
+
+        <!-- Cruelty-free ve dermatolog onaylı markalar -->
+        <section id="brands">
+            <h2>Onaylı Markalar</h2>
+            <h3>Cruelty-Free Markalar</h3>
+            <ul id="cruelty-free-list">
+                <!-- Cruelty-free markalar buraya eklenecek -->
+            </ul>
+            <h3>Dermatolog Onaylı Markalar</h3>
+            <ul id="dermatologist-approved-list">
+                <!-- Dermatolog onaylı markalar buraya eklenecek -->
+            </ul>
+        </section>
+
+        <!-- Geri bildirim formu -->
+        <section id="feedback">
+            <h2>Geri Bildirim</h2>
+            <form id="feedback-form">
+                <textarea id="feedback-text" placeholder="Görüşlerinizi paylaşın..." required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
